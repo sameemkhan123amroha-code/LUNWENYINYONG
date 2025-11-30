@@ -3,7 +3,7 @@ import pandas as pd
 from pypdf import PdfReader
 from io import BytesIO
 import openai
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.schema import Document
@@ -377,4 +377,5 @@ if st.session_state.get('last_generated_html'):
             data=docx_data,
             file_name=f"文献综述_{query}.docx",
             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+
         )
