@@ -5,7 +5,8 @@ openai
 langchain
 langchain-community
 langchain-openai
-langchain-text-splitters  <-- 必须加上这一行
+langchain-text-splitters
+langchain-core            
 scikit-learn
 python-docx
 xlsxwriter
