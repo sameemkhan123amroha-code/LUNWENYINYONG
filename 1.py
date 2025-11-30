@@ -6,7 +6,7 @@ import openai
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
-from langchain.schema import Document
+from langchain_core.documents import Document
 from sklearn.metrics.pairwise import cosine_similarity
 import re
 import os
@@ -379,3 +379,4 @@ if st.session_state.get('last_generated_html'):
             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
 
         )
+
