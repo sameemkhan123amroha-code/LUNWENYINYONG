@@ -1,0 +1,12 @@
+streamlit
+pandas
+pypdf
+openai
+langchain
+langchain-community
+langchain-openai
+scikit-learn
+python-docx
+xlsxwriter
+tiktoken
+faiss-cpu
